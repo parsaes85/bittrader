@@ -1,0 +1,18 @@
+{
+  "name": "bittrader-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./tailwindcss/input.css -o ./tailwindcss/output.css",
+    "watch": "npx tailwindcss -i ./tailwindcss/input.css -o ./tailwindcss/output.css --watch"
+  },
+  "keywords": [],
+  "author": "parsa",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^9.1.1",
+    "tailwindcss": "^3.2.7",
+    "typewriter-effect": "^2.19.0"
+  }
+}
