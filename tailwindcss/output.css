@@ -773,6 +773,10 @@ video {
   height: 100%;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -1189,6 +1193,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.\[k\:0\4\FFFD\FFFD\E\FFFD\5\FFFDX6v\4\FFFD\FFFDz\] {
+  k: 0����X6v��z;
 }
 
 @font-face {
