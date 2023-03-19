@@ -11,11 +11,11 @@ const sidebarLinks = document.querySelectorAll('#sidebar li')
 
 const openSidebar = () => {
     sidebarBtn.classList.add('open')
-    sidebar.classList.replace('top-[-28rem]','top-[4.2rem]')
+    sidebar.classList.replace('top-[-28rem]','top-[4.1rem]')
 }
 const closeSidebar = () => {
     sidebarBtn.classList.remove('open')
-    sidebar.classList.replace('top-[4.2rem]','top-[-28rem]')
+    sidebar.classList.replace('top-[4.1rem]','top-[-28rem]')
 }
 
 sidebarLinks.forEach(link => {
