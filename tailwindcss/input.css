@@ -1,3 +1,7 @@
+:root {
+    --swiper-theme-color: #fab912 !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
