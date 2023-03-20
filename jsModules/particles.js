@@ -1,5 +1,5 @@
 // ---- particles.js config ----
-const particles = () => {
+const particles = ( () => {
   particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -110,6 +110,6 @@ const particles = () => {
     },
     "retina_detect": true
   });
-}
+})();
 
 export default particles

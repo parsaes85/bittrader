@@ -1,5 +1,5 @@
 // ---- typewriter-effect config ----
-const typewriterEffect = () => {
+const typewriterEffect = ( () => {
     let headerTitle = document.getElementById('headerTitle')
 
     let typewriter = new Typewriter(headerTitle, {
@@ -12,6 +12,6 @@ const typewriterEffect = () => {
     .typeString('موفقیت در دستان توست!')
     .pauseFor(2500)
     .start();
-}
+})();
 
 export default typewriterEffect

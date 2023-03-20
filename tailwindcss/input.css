@@ -92,6 +92,10 @@ header {
     background-size: cover;
 }
 
+#sixth-section {
+    background-image: url(../images/bg03.jpg);
+}
+
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, auto));
