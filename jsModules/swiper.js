@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const membersSwiper = new Swiper('.members-swiper', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 1,
@@ -20,9 +20,18 @@ const swiper = new Swiper('.swiper', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.members-swiper-button-next',
+        prevEl: '.members-swiper-button-prev',
     },
 });
 
-export { swiper }
+const quotsSwiper = new Swiper('.quots-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: 'auto',
+    autoplay: true,
+    speed: 400,
+    delay: 9000,
+
+});
+export { membersSwiper, quotsSwiper }
