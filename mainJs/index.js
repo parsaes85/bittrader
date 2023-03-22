@@ -1,6 +1,6 @@
 import typewriterEffect from "../jsModules/typewriterEffect.js";
 import particles from "../jsModules/particles.js";
-import { membersSwiper, quotsSwiper } from "../jsModules/swiper.js";
+import { membersSwiper, quotsSwiper, blogsSwiper } from "../jsModules/swiper.js";
 
 const navbar = document.querySelector('nav')
 const sidebarBtn = document.querySelector('.hamburger')

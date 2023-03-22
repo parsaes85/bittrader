@@ -34,4 +34,32 @@ const quotsSwiper = new Swiper('.quots-swiper', {
     delay: 9000,
 
 });
-export { membersSwiper, quotsSwiper }
+
+const blogsSwiper = new Swiper('.blogs-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 65,
+    loop: true,
+
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 598px
+        598: {
+            slidesPerView: 2,
+            spaceBetween: 85
+        },
+        // when window width is >= 992px
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 100
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.blogs-swiper-button-next',
+        prevEl: '.blogs-swiper-button-prev',
+    },
+});
+export { membersSwiper, quotsSwiper, blogsSwiper }
