@@ -622,14 +622,6 @@ video {
   color: white;
 }
 
-.visible {
-  visibility: visible;
-}
-
-.collapse {
-  visibility: collapse;
-}
-
 .static {
   position: static;
 }
@@ -666,12 +658,12 @@ video {
   top: 4.1rem;
 }
 
-.right-auto {
-  right: auto;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[90\] {
+  z-index: 90;
 }
 
 .col-span-2 {
@@ -749,14 +741,6 @@ video {
   display: table;
 }
 
-.grid {
-  display: grid;
-}
-
-.contents {
-  display: contents;
-}
-
 .hidden {
   display: none;
 }
@@ -798,18 +782,6 @@ video {
   width: 100%;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-11 {
-  width: 2.75rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -818,17 +790,9 @@ video {
   max-width: 36rem;
 }
 
-.border-collapse {
-  border-collapse: collapse;
-}
-
 .scale-75 {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -840,18 +804,6 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-
-.resize {
-  resize: both;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -868,10 +820,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -910,14 +858,6 @@ video {
   gap: 2rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -952,12 +892,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .overflow-x-auto {
@@ -1018,20 +952,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-4 {
@@ -1067,11 +993,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-4 {
@@ -1128,21 +1049,6 @@ video {
   line-height: 1rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-\[\#a3a3a3\] {
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
@@ -1192,14 +1098,6 @@ video {
   text-decoration-line: underline;
 }
 
-.outline {
-  outline-style: solid;
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1222,6 +1120,13 @@ video {
   font-family: "iranyekan";
 
   src: url("../font/iranyekanwebbold.ttf");
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @keyframes arrow {
@@ -1266,6 +1171,15 @@ header {
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+}
+
+.loader.hide {
+  animation: fadeOut .5s;
+  animation-fill-mode: forwards;
+}
+
+.loader.hide > img {
+  display: none;
 }
 
 .bx-arrow-back {

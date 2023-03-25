@@ -16,6 +16,7 @@ const sidebarBtn = document.querySelector('.hamburger')
 const logo = document.getElementById('logo')
 const sidebar = document.getElementById('sidebar')
 const sidebarLinks = document.querySelectorAll('#sidebar li')
+const loader = document.querySelector('.loader')
 
 const openSidebar = () => {
     sidebarBtn.classList.add('open')
@@ -35,6 +36,10 @@ sidebarLinks.forEach(link => {
 sidebarBtn.addEventListener('click', () => {
     if(sidebarBtn.classList.contains('open')) closeSidebar()
     else openSidebar()
+})
+
+window.addEventListener('load', () => {
+    loader.classList.replace('flex', 'hide')
 })
 
 window.addEventListener('scroll', () => {

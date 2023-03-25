@@ -78,6 +78,13 @@
     }
 }
 
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }   
+}
+
 @keyframes arrow {
     from {
         bottom: 4rem;
@@ -120,6 +127,14 @@ header {
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+}
+
+.loader.hide {
+    animation: fadeOut .5s;
+    animation-fill-mode: forwards;
+}
+.loader.hide > img {
+    display: none;
 }
 
 .bx-arrow-back {
