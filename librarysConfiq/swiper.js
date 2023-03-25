@@ -28,7 +28,6 @@ const membersSwiper = new Swiper('.members-swiper', {
 const quotsSwiper = new Swiper('.quots-swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: 'auto',
     autoplay: true,
     speed: 400,
     delay: 9000,
@@ -40,7 +39,6 @@ const blogsSwiper = new Swiper('.blogs-swiper', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 65,
-    loop: true,
 
     // Responsive breakpoints
     breakpoints: {
