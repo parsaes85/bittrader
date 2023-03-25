@@ -1,6 +1,15 @@
-import typewriterEffect from "../jsModules/typewriterEffect.js";
-import particles from "../jsModules/particles.js";
-import { membersSwiper, quotsSwiper, blogsSwiper } from "../jsModules/swiper.js";
+import typewriterEffect from "../librarysConfiq/typewriterEffect.js";
+import particles from "../librarysConfiq/particles.js";
+import { membersSwiper, quotsSwiper, blogsSwiper } from "../librarysConfiq/swiper.js";
+import Service from "../components/Services/services.js";
+import Member from "../components/Members/members.js";
+import Blog from "../components/Blogs/blogs.js";
+import Quot from "../components/quots/quots.js";
+
+window.customElements.define('bittrader-service', Service)
+window.customElements.define('bittrader-member', Member)
+window.customElements.define('bittrader-blog', Blog)
+window.customElements.define('bittrader-quot', Quot)
 
 const navbar = document.querySelector('nav')
 const sidebarBtn = document.querySelector('.hamburger')
