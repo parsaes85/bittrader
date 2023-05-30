@@ -18,6 +18,8 @@ const sidebar = document.getElementById('sidebar')
 const sidebarLinks = document.querySelectorAll('#sidebar li')
 const loader = document.querySelector('.loader')
 
+loader.classList.replace('flex', 'hide')
+
 const openSidebar = () => {
     sidebarBtn.classList.add('open')
     sidebar.classList.replace('top-[-28rem]','top-[4.1rem]')
@@ -36,10 +38,6 @@ sidebarLinks.forEach(link => {
 sidebarBtn.addEventListener('click', () => {
     if(sidebarBtn.classList.contains('open')) closeSidebar()
     else openSidebar()
-})
-
-window.addEventListener('load', () => {
-    loader.classList.replace('flex', 'hide')
 })
 
 window.addEventListener('scroll', () => {
